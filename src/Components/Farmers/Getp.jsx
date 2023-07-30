@@ -15,7 +15,7 @@ const Getp = () => {
     try {
       console.log("pid", productId);
       console.log("bid", bidUserId);
-      const { data } = await axios.post("http://localhost:5000/api/v2/order", {
+      const { data } = await axios.post("https://farmpros.onrender.com/api/v2/order", {
         Product: productId,
         Buyer: bidUserId,
         seller: id,
