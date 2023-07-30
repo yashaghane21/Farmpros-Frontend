@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useAuth } from '../Auth/Authcontext';
 import axios from 'axios';
 import { toast } from "react-toastify"
-import { CiLocationOn } from 'react-icons/Ci';
+import { CiLocationOn } from 'react-icons/ci';
 import { Select } from 'antd';
 import { Navigate, useNavigate } from 'react-router-dom';
 const { Option } = Select;
