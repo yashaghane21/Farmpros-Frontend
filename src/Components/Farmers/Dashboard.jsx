@@ -34,7 +34,7 @@ export default function DashBoard() {
     
         }
         else{
-            navigate("/")
+            navigate("/login")
             toast.warn("login first")
         }
       })
