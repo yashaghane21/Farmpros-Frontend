@@ -3,6 +3,7 @@ import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
 import { BiSolidDashboard } from 'react-icons/bi'
 import { Link, useNavigate } from 'react-router-dom'
 import { useAuth } from '../Auth/Authcontext'
+import {toast} from "react-toastify"
 import axios from 'axios'
 import img1 from "./rr.png"
 export default function DashBoard() {
@@ -27,6 +28,16 @@ export default function DashBoard() {
         localStorage.removeItem("auth");
         navigate('/')
     }
+
+    useEffect(()=>{
+        if(auth?.user){
+    
+        }
+        else{
+            navigate("/")
+            toast.warn("login first")
+        }
+      })
     const city="Mumbai"
     useEffect(() => {
         const fetchWeatherData = async () => {

@@ -3,6 +3,7 @@ import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
 import { BiSolidDashboard } from 'react-icons/bi'
 import { Link, useNavigate } from 'react-router-dom'
 import { useAuth } from '../Auth/Authcontext'
+import { toast } from 'react-toastify'
 export default function DashBoard() {
 
   const [auth,setauth]=useAuth()
@@ -15,7 +16,15 @@ export default function DashBoard() {
         setEnableHome(true)
     }
 
+  useEffect(()=>{
+    if(auth?.user){
 
+    }
+    else{
+        navigate("/")
+        toast.warn("login first")
+    }
+  })
     const handleLogOut = () => {
         setauth({
             user: null,
