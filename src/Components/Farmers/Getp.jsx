@@ -8,7 +8,6 @@ import { Navigate, useNavigate } from 'react-router-dom';
 const { Option } = Select;
 
 const Getp = () => {
-  const [auth, setAuth] = useAuth();
   const id = localStorage.getItem("userid");
   const [myproducts, setMyProducts] = useState([]);
   const navigate = useNavigate()
