@@ -11,7 +11,7 @@ const Orders = () => {
   const id = localStorage.getItem("userid")
   const orders = async () => {
 
-    const { data } = await axios.get("http://localhost:5000/api/v2/orders", {
+    const { data } = await axios.get("https://farmpros.onrender.com/api/v2/orders", {
       params: { id: id }
     });
     if (data?.success) {
