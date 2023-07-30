@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { CiLocationOn } from 'react-icons/Ci';
+import { CiLocationOn } from 'react-icons/ci';
 import { CgProfile } from "react-icons/cg"
 import { VscVerifiedFilled } from "react-icons/vsc"
 import { useNavigate, useParams } from 'react-router-dom';
