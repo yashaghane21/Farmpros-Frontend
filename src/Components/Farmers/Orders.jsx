@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios';
-import img from "./77.png"
 import { Select } from 'antd'
 import { BiUserCircle } from 'react-icons/bi';
 import { useNavigate } from 'react-router-dom';

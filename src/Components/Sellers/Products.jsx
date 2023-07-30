@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import img from "./77.png";
 import { CiLocationOn } from 'react-icons/Ci';
 import axios from 'axios';
-import { useAuth } from '../Auth/Authcontext';
-import { toast } from 'react-toastify';
+
 import { useNavigate } from 'react-router-dom';
 
 const Products = () => {
